@@ -107,7 +107,7 @@
             this.lbl_AptFile.Location = new System.Drawing.Point(1, 65);
             this.lbl_AptFile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_AptFile.Name = "lbl_AptFile";
-            this.lbl_AptFile.Size = new System.Drawing.Size(111, 17);
+            this.lbl_AptFile.Size = new System.Drawing.Size(106, 16);
             this.lbl_AptFile.TabIndex = 4;
             this.lbl_AptFile.Text = "Condor APT File";
             // 
@@ -117,7 +117,7 @@
             this.lbl_InputCup.Location = new System.Drawing.Point(1, 108);
             this.lbl_InputCup.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_InputCup.Name = "lbl_InputCup";
-            this.lbl_InputCup.Size = new System.Drawing.Size(112, 17);
+            this.lbl_InputCup.Size = new System.Drawing.Size(107, 16);
             this.lbl_InputCup.TabIndex = 4;
             this.lbl_InputCup.Text = "Condor CUP File";
             // 
@@ -127,7 +127,7 @@
             this.label1.Location = new System.Drawing.Point(8, 192);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 17);
+            this.label1.Size = new System.Drawing.Size(57, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "Console";
             // 
@@ -148,9 +148,9 @@
             this.lbl_About.Location = new System.Drawing.Point(193, 11);
             this.lbl_About.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_About.Name = "lbl_About";
-            this.lbl_About.Size = new System.Drawing.Size(396, 17);
+            this.lbl_About.Size = new System.Drawing.Size(362, 16);
             this.lbl_About.TabIndex = 6;
-            this.lbl_About.Text = "Version 1.0.7 Revised May 12 2020 by G. Frank Paynter (TA)";
+            this.lbl_About.Text = "Version 1.0.8 Revised Nov 18 2024 by G. Frank Paynter (TA)";
             // 
             // button1
             // 

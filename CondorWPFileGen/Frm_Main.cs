@@ -85,9 +85,11 @@ namespace CondorWPFileGen
                         {
                             byte aptnamlen = binReader.ReadByte();
                             char[] aptnamechars = binReader.ReadChars(35);
+
                             char[] charsToTrim = {'\0'};
                             string aptname = new string(aptnamechars);
-                            aptname = aptname.Trim(charsToTrim);
+                            string lenaptname = aptname.Substring(0, aptnamlen);
+                            //aptname = aptname.Trim(charsToTrim);
                             float aptlatdeg = binReader.ReadSingle();
                             float aptlondeg = binReader.ReadSingle();
                             float aptelevmeters = binReader.ReadSingle();
@@ -98,7 +100,10 @@ namespace CondorWPFileGen
                             float aptfreqmhz = binReader.ReadSingle();
                             byte[] aptmisc = binReader.ReadBytes(6); //remainder discarded
 
-                            Waypoint wp = new Waypoint(aptname, aptlatdeg, aptlondeg, aptelevmeters,
+                            //11/18/24 bugfix: wasn't trimming apt name to aptnamlen properly
+                            //Waypoint wp = new Waypoint(aptname, aptlatdeg, aptlondeg, aptelevmeters,
+                            //    aptrunwydeg, aptlenmeters, aptwidthmeters, aptfreqmhz.ToString()); //put freq in comments
+                            Waypoint wp = new Waypoint(lenaptname, aptlatdeg, aptlondeg, aptelevmeters,
                                 aptrunwydeg, aptlenmeters, aptwidthmeters, aptfreqmhz.ToString()); //put freq in comments
                             WPList.Add(wp);
                         }
